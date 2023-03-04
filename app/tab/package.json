@@ -53,7 +53,7 @@
     "gulp": "^4.0.2",
     "gulp-token-replace": "^1.1.5",
     "gulp-zip": "^5.0.2",
-    "ngrok": "^3.3.0",
+    "ngrok": "^4.3.3",
     "plugin-error": "^1.0.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.3",
@@ -61,7 +61,7 @@
     "z-schema": "^5.0.0"
   },
   "scripts": {
-    "start": "set PORT=3978 HTTP=true && react-scripts --openssl-legacy-provider start",
+    "start": "export PORT=3978 HTTP=true && react-scripts --openssl-legacy-provider start",
     "serve": "react-scripts start & gulp start-ngrok",
     "build": "react-scripts build",
     "package": "gulp manifest"
